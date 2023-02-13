@@ -1,0 +1,43 @@
+body{
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+table{
+  border: 2px solid #eee;
+  border-collapse:collapse;
+  /* 個別に表示されるtable要素、td要素、th要素の枠線を１本にまとめて表示させる */
+}
+thead,
+tfoot{
+  background: #eee;
+}
+th,td{
+  padding: 8px;
+  text-align: center;
+}
+tbody td:first-child{
+  color: red;
+}
+tbody td:last-child{
+  color: blue;
+}
+tfoot{
+  font-weight: bold;
+}
+
+/* 翌月分に日付は字を薄くする */
+td.disabled{
+  opacity: 0.3;
+}
+
+/* 本日分は太字にする */
+td.today{
+  font-weight: bold;
+}
+
+#prev,
+#next,
+#today{
+  cursor: pointer;
+  user-select: none;
+}
